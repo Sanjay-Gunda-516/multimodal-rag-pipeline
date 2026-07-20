@@ -1,0 +1,57 @@
+# ── Python ─────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+
+# ── Virtual environment ─────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Secrets — NEVER commit API keys ────────────────────────────────
+.env
+!.env.example
+
+# ── Data — PDFs and images can be large, rebuild from source ───────
+data/uploads/
+data/images/
+
+# ── ChromaDB — vector store rebuilt during ingestion ───────────────
+chroma_db/
+
+# ── Logs ────────────────────────────────────────────────────────────
+logs/
+*.log
+
+# ── HuggingFace and model caches (can be hundreds of MB) ───────────
+.cache/
+models/
+*.bin
+*.safetensors
+
+# ── Streamlit secrets ───────────────────────────────────────────────
+.streamlit/secrets.toml
+
+# ── Jupyter (for experiment notebooks if you add them) ─────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── macOS system files ──────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+._*
+
+# ── IDEs ────────────────────────────────────────────────────────────
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# ── bm25s index (rebuilt during ingestion) ──────────────────────────
+bm25s_index/
