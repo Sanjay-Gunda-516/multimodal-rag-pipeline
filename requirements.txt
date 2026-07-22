@@ -1,19 +1,43 @@
-streamlit
-langchain
-langchain-community
-langchain-openai
-langchain-huggingface
-langchain-chroma
-chromadb
-sentence-transformers
-transformers
-torch
-pymupdf
-pypdf
-python-dotenv
-tiktoken
-openai
-rank-bm25
-bm25s
-unstructured
-Pillow
+# PDF processing
+pdfplumber>=0.10.0
+PyMuPDF>=1.24.0
+
+# Text chunking
+langchain-text-splitters>=0.2.0
+
+# Machine learning runtime
+torch>=2.1.0
+torchvision>=0.16.0
+
+# Text embeddings and reranking
+sentence-transformers>=2.7.0
+transformers>=4.40.0
+
+# Image embeddings
+open-clip-torch>=2.24.0
+Pillow>=10.0.0
+
+# Vector database
+chromadb>=0.5.0
+
+# Keyword search
+bm25s>=0.1.0
+
+# Claude API
+anthropic>=0.30.0
+
+# LLM observability
+langfuse>=2.0.0
+
+# Configuration
+pydantic-settings>=2.0.0
+python-dotenv>=1.0.0
+
+# User interface
+streamlit>=1.35.0
+
+# Utilities
+numpy>=1.26.0
+pandas>=2.1.0
+tqdm>=4.66.0
+loguru>=0.7.0
